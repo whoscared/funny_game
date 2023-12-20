@@ -6,12 +6,6 @@
     margin-top: 115px;
 }
 
-.croco-1 {
-    width: 20%;
-}
-
-
-
 .main {
     display: flex;
     justify-content: center;
@@ -28,3 +22,16 @@
     background-color: thistle;
 }
 
+.usernameForm {
+    font-family: "Rubik";
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url(../fonts/RubikSprayPaint-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Akshar";
+    src: url(../fonts/SawarabiGothic-Regular.ttf);
+}
