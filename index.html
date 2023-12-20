@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>whoscared</title>
+    <link rel="stylesheet" href="./css/style_main.css">
+    <script src="./js/main_script.js"></script>
+</head>
+<body class="body">
+
+    <main class="main" name="user_form">
+        <img class="test-img" src="./img/Group1.png">
+
+        <form id="usernameForm">
+            <label for="username">Введите ваше имя:</label>
+            <input type="text" id="username" required>
+            <button type="submit">Начать тест</button>
+          </form>
+
+          <script>
+            document.getElementById('usernameForm').addEventListener('submit', function(event) {
+              event.preventDefault();
+              var username = document.getElementById('username').value;
+              localStorage.setItem('currentUser', username);
+              window.location.href = 'test.html';
+            });
+          </script>
+
+    </main>
+
+</body>
+</html>

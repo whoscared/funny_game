@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>whoscared</title>
+    <link rel="stylesheet" href="./css/style_test.css">
+
+</head>
+<body class="body" id="body">
+    <div class="navbar" id="navbar">
+        <div class="question" id="question"></div>
+        <div class="timer" id="timer">10</div>
+        <div class="score" id="score-text">Количество очков: </div>
+        <div class="score" id="score">0</div>
+    </div>
+
+    <div class="test" id="test-1" ondragstart="dragStart(event)" ondragend="dragEnd(event)">
+        <img class="croco" id="croco-1" src="./img/test1/croco-1.gif">
+        <img class="croco" id="croco-2" src="./img/test1/croco-1.png">
+        <img class="croco" id="croco-3" src="./img/test1/croco-3.gif">
+        <img class="monkey" id="monkey-1" src="./img/test1/monkey-1.png">
+        <img class="monkey" id="monkey-2" src="./img/test1/monkey-2.png">
+        <img class="monkey" id="monkey-3" src="./img/test1/monkey-3.png">
+        <div class="palm" id="palm" ondragstart="dragStart(event)" ondragend="dragEnd()" ondragover="dragOver(event)" ondrop="dragDrop_0(event)">
+            <img class="palm-img" id="palm-img" src="./img/test1/palm.png">
+        </div>
+        <div class="pound" id="pound" ondragstart="dragStart(event)" ondragend="dragEnd()" ondragover="dragOver(event)" ondrop="dragDrop_1(event)">
+        </div>
+    </div>
+
+    
+    <div class="test" id="test-2">
+        <img id="wathermelon" class="withA food test-2-item" " src="./img/test2/wathermelon.png">
+        <img id="guava" class="food test-2-item" src="./img/test2/guava.png">
+        <img id="croissant" class="food test-2-item"  src="./img/test2/croissant.png">
+        <img id="bus"class="withA test-2-item" src="./img/test2/bus.png">
+        <img id="orange" class="food withA test-2-item" src="./img/test2/orange.png">
+        <img id="pineapple" class="food withA test-2-item" src="./img/test2/pineapple.png">
+        <img id="pumpkin" class="food test-2-item" src="./img/test2/pumpkin.png">
+        <img id="shark" class="withA test-2-item"  src="./img/test2/shark.png">
+    </div>
+
+    <div class="test" id="test-3" ondragstart="dragStart(event)" ondragend="dragEndWord(event)">
+        <div class="section" id="section-1" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dragDropWord(event)">
+            
+        </div>
+        <div class="section" id="section-2">
+            <img id="game" class="test-3-item red_0 red_1" src="./img/test3/game.png">
+            <img id="chocolate" class="test-3-item blue_0 blue_1" src="./img/test3/chocolate.png">
+            <img id="hedgehog" class="test-3-item red_0 blue_1" src="./img/test3/hedgehog.png">
+            <img id="hot" class="test-3-item blue_0 red_1" src="./img/test3/hot.png">
+            <img id="iod" class="test-3-item blue_0 blue_1" src="./img/test3/iod.png">
+            <img id="island" class="test-3-item red_0 blue_1" src="./img/test3/island.png">
+            <img id="mouse" class="test-3-item blue_0 red_1" src="./img/test3/mouse.png">
+            <img id="ula" class="test-3-item red_0 red_1" src="./img/test3/ula.png">
+        </div>
+        <div class="section" id="section-3" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dragDropWord(event)">
+            
+        </div>
+    </div>
+
+
+    <button class="btn" id="next-test" disabled>Следующий тест</button>
+    <form action="result.html" id="result-form" style="display: none;">
+        <button class="but" id="result-but">Результат</button>
+    </form>
+    
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
