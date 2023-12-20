@@ -20,4 +20,4 @@ for (var i = 0; i < usersResults.length; i++) {
   userListElement.appendChild(listItem);
 }
 
-result.innerText('Твой результат ' + localStorage.getItem('currentResult'));
+result.innerText = 'Твой результат ' + localStorage.getItem('currentResult');
